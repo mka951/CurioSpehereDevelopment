@@ -1,7 +1,6 @@
 var styles = {
-    fontSize: "150px",
     opacity: "0",
-    transitionDuration: "2s",
+    transitionDuration: "1s",
 };
 
 var welcomeElement = document.getElementById("welcome");

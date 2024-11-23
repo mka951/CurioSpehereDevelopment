@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
 
+/* Global variables */
 :root {
     --bgcolorprimary: #131313;
     --textcolorprimary: #ffffff;
+    --mainfontfamily: 'Montserrat', sans-serif;
 }
 
 body {
@@ -10,34 +12,44 @@ body {
     margin: 0;
 }
 
-.welcometext {
+
+.wtext {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     background-color: var(--bgcolorprimary);
-    /* position: fixed; */
+    position: fixed;
 
 }
 
-.welcometext h1,
-.welcometext p {
+.wtextm p {
     color: var(--textcolorprimary);
     margin: 0;
+    margin-left: 0.5vw;
+    font-size: clamp(8px, 2vw, 2vw);
+    font-family: var(--mainfontfamily);
 }
-
-.welcometext div {
-    width: min-content;
-}
-
-.welcometext div h1 {
-    font-size: 7vw;
-    font-family: 'Montserrat', sans-serif;
+.wtextm h1 {
+    color: var(--textcolorprimary);
+    margin: 0;
+    font-size: clamp(32px, 8vw, 8vw);
+    font-family: var(--mainfontfamily);
     font-weight: 500;
 }
 
-.welcometext p {
-    font-size: 1vw;
-    font-family: 'Montserrat', sans-serif;
+.wtextl {
+    color: var(--textcolorprimary);
 }
+
+.wtextc {
+    width: min-content;
+    display: flex;
+    align-items: center;
+}
+
+.wtextm{
+    display: block;
+}
+

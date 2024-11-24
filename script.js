@@ -1,25 +1,27 @@
-let style1 = {
-    opacity: "0",
-};
 
-let style2 = {
-    opacity: "1",
-    transitionDuration: "1s",
-};
-
-let style3 = {
-    opacity: "0",
-    transitionDuration: "1s",
-};
-
-let style4 = {
-    visibility: "hidden",
-};
 
 const wElement = document.getElementById("wtext");
 const wElementBg = document.getElementById("wsec");
 window.onload = function() {
 
+    let style1 = {
+        opacity: "0",
+    };
+
+    let style2 = {
+        opacity: "1",
+        transitionDuration: "1s",
+    };
+
+    let style3 = {
+        opacity: "0",
+        transitionDuration: "1s",
+    };
+
+    let style4 = {
+        visibility: "hidden",
+    };
+    
     Object.assign(wElement.style, style1);
 
     setTimeout(function() {

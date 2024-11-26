@@ -20,23 +20,23 @@ window.onload = function() {
         visibility: "hidden",
     };
     
-    Object.assign(wElement.style, style1);
+    // Object.assign(wElement.style, style1);
 
-    setTimeout(function() {
-        Object.assign(wElement.style, style2);
-    }, 1000);
+    // setTimeout(function() {
+    //     Object.assign(wElement.style, style2);
+    // }, 1000);
 
-    setTimeout(function() {
-        Object.assign(wElement.style, style3)
-    },3500)
-    setTimeout(function() {
-        Object.assign(wElementBg.style, style3)
-    },4000)
+    // setTimeout(function() {
+    //     Object.assign(wElement.style, style3)
+    // },3500)
+    // setTimeout(function() {
+    //     Object.assign(wElementBg.style, style3)
+    // },4000)
 
     setTimeout(function() {
         Object.assign(wElement.style, style4)
-    },4500)
+    },0)
     setTimeout(function() {
         Object.assign(wElementBg.style, style4)
-    },5000)
+    },0)
 };

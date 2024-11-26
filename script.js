@@ -1,5 +1,3 @@
-
-
 const wElement = document.getElementById("wtext");
 const wElementBg = document.getElementById("wsec");
 window.onload = function() {

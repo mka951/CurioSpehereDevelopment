@@ -33,6 +33,8 @@ body {
     margin-left: 0.5vw;
     font-size: clamp(8px, 2vw, 2vw);
     font-family: var(--mainfontfamily);
+    position: relative;
+    bottom: 2vw;
 }
 .wtextm h1 {
     color: var(--textcolorprimary);
@@ -40,6 +42,11 @@ body {
     font-size: clamp(32px, 8vw, 8vw);
     font-family: var(--mainfontfamily);
     font-weight: 500;
+}
+
+.wtext img{
+    width: 20vw;
+    margin: 10px;
 }
 
 .wtextl {

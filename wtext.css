@@ -1,0 +1,55 @@
+body {
+    background-color: var(--color-bg);
+    margin: 0;
+    color: var(--color-text-primary);
+    transition: 0.2s;
+}
+
+
+.wtext {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--color-bg);
+    position: fixed;
+
+}
+
+.wtextm p {
+    color: var(--color-text-primary);
+    margin: 0;
+    margin-left: 0.5vw;
+    font-size: clamp(8px, 2vw, 25px);
+    font-family: var(--font-family-primary);
+    position: relative;
+    bottom: clamp(0px,1vw,15px);
+}
+.wtextm h1 {
+    color: var(--color-text-primary);
+    margin: 0;
+    font-size: clamp(32px, 8vw, 100px);
+    font-family: var(--font-family-primary);
+    font-weight: 500;
+}
+
+.wtext img{
+    width: clamp(80px,20vw,250px);
+    margin: 10px;
+}
+
+.wtextl {
+    color: var(--color-text-primary);
+}
+
+.wtextc {
+    width: min-content;
+    display: flex;
+    align-items: center;
+}
+
+.wtextm{
+    display: block;
+}
+

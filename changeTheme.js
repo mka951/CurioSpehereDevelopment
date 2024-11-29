@@ -1,5 +1,3 @@
-let darkmode = true
-
 const darkTheme = {
     '--color-bg': '#131313',
     '--color-text-primary': '#ffffff',
@@ -10,11 +8,13 @@ const lightTheme = {
 }
 
 function changeTheme(variables) {
+    const root = document.querySelector(':root')
     for (const [key, value] of Object.entries(variables)) {
-        document.documentElement.style.setProperty(key, value);
+        root.style.setProperty(key, value);
     }
 }
 
+let darkmode = true
 document.getElementById('toggleTheme').addEventListener('click', function() {
     if (darkmode) {
         changeTheme(lightTheme)
@@ -23,17 +23,3 @@ document.getElementById('toggleTheme').addEventListener('click', function() {
     }
     darkmode = !darkmode
 })
-
-
-// function changeTheme() {
-// if (theme == "dark") {
-//     Object.assign(document.documentElement, darktheme)
-//     theme = "light"
-// } else {
-//     Object.assign(document.documentElement, lightheme)
-//     theme = "dark"
-// }}
-
-// document.getElementById('theme-toggle-button').addEventListener('click', changeTheme);
-
-// document.documentElement.style.setProperty()

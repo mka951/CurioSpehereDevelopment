@@ -1,0 +1,33 @@
+.isec{
+    display: block;
+    background-color: var(--color-bg);
+    width: 100%;
+    align-content: center;
+}
+.idiv{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 5vw;
+}
+.iimg{
+    height: min-content;
+}
+.idivt {
+    font-family: var(--font-family-primary);
+    text-align: left;
+    margin: 10px;
+    color: var(--color-text-primary);
+}
+.idivt p{font-size: 14px;}
+.idivt h1 {
+    margin: 4px 0;
+    
+}
+.idivt h1 b{
+    font-size: 50px;
+    background: #121FCF;
+    background: linear-gradient(to bottom left, var(--color-accent1) 20%, var(--color-accent2) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

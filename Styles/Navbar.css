@@ -1,0 +1,26 @@
+.nav{
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    color: var(--color-text-primary);
+    background-color: var(--color-bg);
+    font-family: var(--font-family-primary);
+    align-items: center;
+    height: 56px;
+    transition-duration: 0.2s;
+}
+.nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav ul li{
+    text-decoration: none;
+    list-style: none;
+    margin: 10px;
+    height: 24px;
+}
+.nav img{
+    color: white;
+}

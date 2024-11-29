@@ -3,10 +3,11 @@ body {
     margin: 0;
     color: var(--color-text-primary);
     transition: 0.2s;
+    width: 100%
 }
-body >{
+/* body >{
     opacity: 0;
-}
+} */
 
 .wtext {
     display: flex;

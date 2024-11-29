@@ -1,25 +1,30 @@
 .isec{
     display: block;
-    background-color: var(--color-bg);
     width: 100%;
     align-content: center;
+    height: calc(100vh);
+    background-color: var(--color-accent-bg);
+    transition-duration: 0.5s;
 }
 .idiv{
-    display: flex;
+    display: grid;
     justify-content: space-evenly;
     align-items: center;
-    margin: 0 5vw;
+    margin:0;
 }
 .iimg{
     height: min-content;
+    width: 100%;
 }
 .idivt {
     font-family: var(--font-family-primary);
     text-align: left;
-    margin: 10px;
+    margin: 0 5vw 24px;
     color: var(--color-text-primary);
 }
-.idivt p{font-size: 14px;}
+.idivt p {
+    font-size: 14px;
+}
 .idivt h1 {
     margin: 4px 0;
     
@@ -28,6 +33,6 @@
     font-size: 50px;
     background: #121FCF;
     background: linear-gradient(to bottom left, var(--color-accent1) 20%, var(--color-accent2) 100%);
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }

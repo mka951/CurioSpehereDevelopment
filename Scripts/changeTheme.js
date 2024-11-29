@@ -13,13 +13,15 @@ function changeTheme(variables) {
         root.style.setProperty(key, value);
     }
 }
-
+const image = document.getElementById("darklightbutton")
 let darkmode = true
 document.getElementById('toggleTheme').addEventListener('click', function() {
     if (darkmode) {
         changeTheme(lightTheme)
+        image.src = "Assets/light_mode.svg"
     } else {
         changeTheme(darkTheme)
+        image.src = "Assets/dark_mode.svg"
     }
     darkmode = !darkmode
 })

@@ -9,6 +9,8 @@
     align-items: center;
     height: 56px;
     transition-duration: 0.2s;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .nav ul {
     display: flex;

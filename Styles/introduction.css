@@ -1,0 +1,44 @@
+.isec{
+    display: block;
+    width: 100%;
+    align-content: center;
+    height: 600px;
+    background-color: var(--color-bg);
+    background-image: url(/Assets/stock.jpeg);
+    background-position: center;
+    background-size: cover;
+    transition-duration: 0.5s;
+}
+.idiv{
+    display: grid;
+    justify-content: space-evenly;
+    align-items: center;
+    margin:0;
+}
+.iimg{
+    height: min-content;
+}
+.idivt {
+    font-family: var(--font-family-primary);
+    text-align: left;
+    margin: 0 5vw 24px;
+    color: var(--color-text-primary);
+    
+}
+.idivt p {
+    font-size: 14px;
+    transition-duration: 0.3s;
+}
+.idivt h1 {
+    margin: 4px 0;
+    font-size: 20px;
+    transition-duration: 0.3s;
+}
+.idivt h1 b{
+    font-size: 50px;
+    background: #121FCF;
+    background: linear-gradient(to bottom left, var(--color-accent1) 20%, var(--color-accent2) 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}

@@ -82,4 +82,16 @@ checkwidth.addEventListener("change", function() {
             changemenubutton.src = "Assets/menu_light.svg"
         }
     }
+});
+
+const navmenuul = document.getElementById("navmenuul")
+navmenuul.addEventListener("click", function() {
+    dropDownMenuShow(showfalse)
+    dropDownMenuShow1(showfalse1)
+    if (darkmode) {
+        changemenubutton.src = "Assets/menu_dark.svg"
+    } else {
+        changemenubutton.src = "Assets/menu_light.svg"
+    }
+    visible = false
 })

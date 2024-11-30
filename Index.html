@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CurioSphere</title>
-    <link rel="stylesheet" href="/Styles/introduction.css">
-    <link rel="stylesheet" href="/Styles/Navbar.css">
+    <link rel="stylesheet" href="/Styles/global.css">
     <link rel="stylesheet" href="/Styles/variables.css">
     <link rel="stylesheet" href="/Styles/wtext.css">
+    <link rel="stylesheet" href="/Styles/Navbar.css">
+    <link rel="stylesheet" href="/Styles/introduction.css">
     <link rel="stylesheet" href="/Styles/why.css">
+    <link rel="stylesheet" href="/Styles/how.css">
+    <link rel="stylesheet" href="/Styles/gallery.css">
+    <link rel="stylesheet" href="/Styles/footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
@@ -27,10 +31,11 @@
         <div class="navdiv">
             <h1>CurioSphere</h1>
             <ul>
-                <li><a href="#isecid?stopA=1">Introduction</a></li>
-                <li><a href="">Why</a></li>
-                <li><a href="">How</a></li>
-                <li><a href="">About</a></li>
+                <li><a href="?stopA=1#isecid">Introduction</a></li>
+                <li><a href="?stopA=1#wsecid">Why</a></li>
+                <li><a href="?stopA=1#hsecid">How</a></li>
+                <li><a href="?stopA=1#gsecid">Gallery</a></li>
+                <li><a href="?stopA=1#footer">About</a></li>
                 <li id="toggleTheme"><img id="darklightbutton" src="/Assets/dark_mode.svg" alt="toggle theme"></li>
             </ul>
         </div>
@@ -44,11 +49,12 @@
                 </ul>
             </div>
             <div class="navmenu" id="navMenu">
-                <ul>
-                    <li><a href="">Introduction</a></li>
-                    <li><a href="">Why</a></li>
-                    <li><a href="">How</a></li>
-                    <li><a href="">About</a></li>
+                <ul id="navmenuul">
+                    <li><a href="?stopA=1#isecid">Introduction</a></li>
+                    <li><a href="?stopA=1#wsecid">Why</a></li>
+                    <li><a href="?stopA=1#hsecid">How</a></li>
+                    <li><a href="?stopA=1#gsecid">Gallery</a></li>
+                    <li><a href="?stopA=1#footer">About</a></li>
                     <li id="toggleTheme1" class="toggleTheme"><img id="darklightbutton1" src="/Assets/dark_mode.svg" alt="toggle theme">Change Mode</li>
                 </ul>
             </div>
@@ -57,14 +63,14 @@
 
      <section class="isec" id="isecid"> <!-- introduction section -->
         <div class="idiv">
-            <div class="idivt"> <!-- flex please -->
+            <div class="idivt">
                 <h1>Introducing,<br><b> CurioSphere.</b></h1>
                 <p>CurioSphere is a website originally created by Matteo Kenzie Rana. The main goal of this website is to create a place to share information and stories about cultures around the world. Inherited culture is not only about dance, language, and so on. But culture is also related to meaning, ways of thinking, and philosophy in it which relate to human harmony with nature.</p>
             </div>
         </div>
     </section>
 
-    <section class="wsec"> <!-- Why Section -->
+    <section class="wsec" id="wsecid"> <!-- Why Section -->
         <div class="wdiv">
             <div class="wdivt">
                 <h1>Why We Chose CurioSphere?</h1>
@@ -74,26 +80,46 @@
         </div>
     </section>
 
-    <section class="eror">
-        <div class="idiv">
-            <div class="idivt">
+    <section class="hsec" id="hsecid"> <!-- How Section -->
+        <div class="hdiv">
+            <div class="hdivt">
                 <h1>How CurioSphere can change our world?</h1>
                 <p>Matteo believes that if we work together, if we can create community, then we can protect, and share our culture throughout the world. We can also learn every meaning in it and deep philosophy related to humans and nature. The community that is built can create big changes for the world. That's because we want to understand each other, and create harmony.</p>
             </div>
         </div>
     </section>
-    <section class="eror">
-        <div class="idiv">
-            <div class="idivt">
-                <h1>How CurioSphere can change our world?</h1>
-                <p>Matteo believes that if we work together, if we can create community, then we can protect, and share our culture throughout the world. We can also learn every meaning in it and deep philosophy related to humans and nature. The community that is built can create big changes for the world. That's because we want to understand each other, and create harmony.</p>
+    <section class="gsec" id="gsecid">
+        <div class="gdiv">
+            <div class="gdivt">
+                <h1>| Gallery</h1>
+                <div class="gdivi">
+                    <img src="/Assets/gallery1.png" alt="">
+                    <img src="/Assets/gallery2.png" alt="">
+                    <img src="/Assets/gallery3.png" alt="">
+                    <img src="/Assets/gallery4.png" alt="">
+                </div>
             </div>
         </div>
     </section>
 
+    <footer id="footer">
+        <div>
+            <p>Created from scratch with love and passion by Marcell & Matteo!</p>
+            <div>
+                <h1>| Contact</h1>
+                <ul>
+                    <li>+62-877-2839-7115 (Marcell)</li>
+                    <li>+62-812-9587-3281 (Matteo)</li>
+                    <li>marcell.anggarawan@student.citraberkat.sch.id</li>
+                    <li>matteo.rana@student.citraberkat.sch.id</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 
-    <script src="/Scripts/navdropdown.js"></script>
     <script src="/Scripts/changeTheme.js"></script>
+    <script src="/Scripts/navdropdown.js"></script>
     <script src="/Scripts/wAnimation.js"></script>
+    <script src="/Scripts/global.js"></script>
 </body>
 </html>

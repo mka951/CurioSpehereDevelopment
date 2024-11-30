@@ -2,11 +2,15 @@ const darkTheme = {
     '--color-bg': '#131313',
     '--color-text-primary': '#ffffff',
     '--color-nav': '#0000006a',
+    '--photo-1': 'url(/Assets/image.png)',
+    '--photo-2': 'url(/Assets/Kheops-Pyramid.jpg)',
 }
 const lightTheme = {
     '--color-bg': '#ffffff',
     '--color-text-primary': '#000000',
     '--color-nav': '#ffffff9f',
+    '--photo-1': 'url(/Assets/image-light.png)',
+    '--photo-2': 'url(/Assets/Kheops-Pyramid-light.jpg)',
 }
 
 function changeTheme(variables) {

@@ -1,31 +1,31 @@
-.wsec{
+.hsec{
     display: block;
     width: 100%;
     align-content: center;
     height: 100vh;
     background-color: var(--color-bg);
-    background-image: var(--photo-1);
+    background-image: var(--photo-2);
     background-position: center;
     background-size: cover;
     transition-duration: 0.5s;
 }
-.wdiv{
+.hdiv{
     display: grid;
     justify-content: space-evenly;
     align-items: center;
     margin: 56px 0;
 }
-.wimg{
+.himg{
     height: min-content;
 }
-.wdivt {
+.hdivt {
     font-family: var(--font-family-primary);
     text-align: left;
     margin: 12px 5vw 24px;
     color: var(--color-text-primary);
     
 }
-.wdivt p {
+.hdivt p {
     font-size: 16px;
     transition-duration: 0.3s;
     max-width: 750px;
@@ -33,15 +33,23 @@
     line-height: 24px;
     color: #ffffff;
 }
-.wdivt h1 {
+.hdivt h1 {
     margin: 4px 0;
     font-size: 25px;
     transition-duration: 0.3s;
     color: #ffffff;
 }
+.hdivt h1 b{
+    font-size: 50px;
+    background: #121FCF;
+    background: linear-gradient(to bottom left, var(--color-accent1) 20%, var(--color-accent2) 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
 
 @media screen and (max-width: 650px) {
-    .wdivt p{
+    .hdivt p{
         font-size: 16px;
         text-align: justify;
     }

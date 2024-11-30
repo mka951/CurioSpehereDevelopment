@@ -1,13 +1,4 @@
-body {
-    background-color:black;
-    margin: 0;
-    color: var(--color-text-primary);
-    transition: 0.2s;
-    width: 100%;
-    scroll-behavior: smooth;
-    scroll-snap-align: start;
-    overflow-y: scroll;
-}
+
 
 .wtext {
     display: flex;

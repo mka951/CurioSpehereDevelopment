@@ -11,6 +11,8 @@
     --color-nav: #0000006a;
     --font-family-primary: 'Poppins', sans-serif;
     --font-family-secondary: 'IBM Plex Sans';
+    --photo-1: url(/Assets/image.png);
+    --photo-2: url(/Assets/Kheops-Pyramid.jpg);
 }
 
 ::-webkit-scrollbar {width: 0px;}

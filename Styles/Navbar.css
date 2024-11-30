@@ -1,28 +1,106 @@
 .nav{
+    position: fixed;
+    display: block;
+    width: 100%;
+    backdrop-filter: blur(7px);
+    transition-duration: 0.2s;
+    height: 56px;
+    background-color: var(--color-nav);
+}
+.navdiv{
     position: sticky;
     top: 0;
     display: flex;
     justify-content: space-around;
     color: var(--color-text-primary);
-    background-color: var(--color-bg);
     font-family: var(--font-family-primary);
     align-items: center;
     height: 56px;
     transition-duration: 0.2s;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    opacity: 1;
+    z-index: 2;
 }
 .nav ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-.nav ul li{
-    text-decoration: none;
+.nav ul li {
     list-style: none;
     margin: 10px;
     height: 24px;
 }
-.nav img{
-    color: white;
+.nav a {
+    color: var(--color-text-primary);
+    text-decoration: none;
+}
+.nav img:hover{
+    cursor: pointer;
+}
+.navdivm{
+    visibility: hidden;
+    opacity: 0;
+    z-index: -1;
+}
+.navmenu{
+    opacity: 0;
+    visibility: hidden;
+    transition-duration: 0.2s;
+    .toggleTheme {display: flex;align-items: center; cursor: pointer;}
+}
+
+
+@media screen and (max-width: 650px) {
+    .navdiv{
+        opacity: 0;
+        z-index: -1;
+        transition-duration: 0.2s;
+    }
+    .navdivm{
+        display: block;
+        width: 100%;
+        visibility: visible;
+        position: fixed;
+        top: 0;
+        opacity: 1;
+        z-index: 2;
+    }
+    .navdivmt{
+        position: sticky;
+        top: 0;
+        display: flex;
+        justify-content: space-between;
+        color: var(--color-text-primary);
+        font-family: var(--font-family-primary);
+        align-items: center;
+        height: 56px;
+    }
+    .navdivmt h1{
+        margin-left: 4.5vw;
+    }
+    .navdivmt ul{
+        margin-right: 2vw;
+    }
+    .navmenu{
+        opacity: 0;
+        visibility: visible;
+        color: var(--color-text-primary);
+        font-family: var(--font-family-primary);
+        position: fixed;
+        top: 56px;
+        width: 100%;
+    }
+    .navmenu ul{
+        display: block;
+        margin: 20px 0 30px;
+    }
+    .navmenu ul li{
+        align-items: center;
+    }
+    .navmenu ul li img{
+        padding-right: 2px;
+    }
+    #menuButtonIcon{
+        transition-duration: 1s;
+    }
 }

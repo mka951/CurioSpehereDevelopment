@@ -1,61 +1,44 @@
-.isec{
+.wsec{
     display: block;
     width: 100%;
     align-content: center;
-    height: 100vh;
+    height: 600px;
     background-color: var(--color-bg);
-    background-image: url(/Assets/globe.png);
-    background-position: 70%;
+    background-image: url(/Assets/stock.jpeg);
+    background-position: center;
     background-size: cover;
     transition-duration: 0.5s;
 }
-.idiv{
-    display: block;
+.wdiv{
+    display: grid;
     justify-content: space-evenly;
     align-items: center;
     margin:0;
 }
-.iimg{
+.wimg{
     height: min-content;
 }
-.idivt {
+.wdivt {
     font-family: var(--font-family-primary);
     text-align: left;
     margin: 0 5vw 24px;
-    color: #ffffff
+    color: var(--color-text-primary);
     
 }
-.idivt p {
+.wdivt p {
     font-size: 14px;
     transition-duration: 0.3s;
-    max-width: 750px;
-    font-family: var(--font-family-secondary);
-    line-height: 16px;
 }
-.idivt h1 {
-    margin: 0 0 16px;
-    font-size: 20px;
+.wdivt h1 {
+    margin: 4px 0;
+    font-size: 30px;
     transition-duration: 0.3s;
-    line-height: 38px;
 }
-.idivt h1 b{
+.wdivt h1 b{
     font-size: 50px;
     background: #121FCF;
     background: linear-gradient(to bottom left, var(--color-accent1) 20%, var(--color-accent2) 100%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
-
-}
-
-@media screen and (max-width: 650px) {
-    .idivt p{
-        font-size: 10px;
-    }
-    .idivt h1 b{
-        font-size: 35px;
-    }
-    .idivt h1{
-        font-size: 16px;
-    }
 
 }

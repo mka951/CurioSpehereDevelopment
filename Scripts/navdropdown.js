@@ -6,9 +6,11 @@ const showtrue = {
 }
 const showfalse1 = {
     'opacity': '0',
+    'visibility': 'hidden',
 }
 const showtrue1 = {
     'opacity': '1',
+    'visibility': 'visible',
 }
 
 

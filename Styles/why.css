@@ -2,12 +2,13 @@
     display: block;
     width: 100%;
     align-content: center;
-    height: 600px;
+    height: 100vh;
     background-color: var(--color-bg);
-    background-image: url(/Assets/stock.jpeg);
+    background-image: url(/Assets/image.png);
     background-position: center;
     background-size: cover;
     transition-duration: 0.5s;
+    scroll-snap-align: start;
 }
 .wdiv{
     display: grid;
@@ -21,17 +22,20 @@
 .wdivt {
     font-family: var(--font-family-primary);
     text-align: left;
-    margin: 0 5vw 24px;
+    margin: 12px 5vw 24px;
     color: var(--color-text-primary);
     
 }
 .wdivt p {
-    font-size: 14px;
+    font-size: 16px;
     transition-duration: 0.3s;
+    max-width: 750px;
+    font-family: var(--font-family-secondary);
+    line-height: 24px;
 }
 .wdivt h1 {
     margin: 4px 0;
-    font-size: 30px;
+    font-size: 25px;
     transition-duration: 0.3s;
 }
 .wdivt h1 b{
@@ -41,4 +45,11 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
 
+}
+
+@media screen and (max-width: 650px) {
+    .wdivt p{
+        font-size: 16px;
+        text-align: justify;
+    }
 }

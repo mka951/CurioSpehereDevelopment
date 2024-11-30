@@ -4,11 +4,10 @@ body {
     color: var(--color-text-primary);
     transition: 0.2s;
     width: 100%;
-    
+    scroll-behavior: smooth;
+    scroll-snap-align: start;
+    overflow-y: scroll;
 }
-/* body >{
-    opacity: ;
-} */
 
 .wtext {
     display: flex;

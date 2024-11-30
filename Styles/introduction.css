@@ -8,6 +8,8 @@
     background-position: 70%;
     background-size: cover;
     transition-duration: 0.5s;
+    scroll-snap-align: start;
+    scroll-snap-type: y mandatory;
 }
 .idiv{
     display: block;
@@ -51,10 +53,11 @@
 
 @media screen and (max-width: 650px) {
     .idivt p{
-        font-size: 10px;
+        font-size: 16px;
+        text-align: justify;
     }
     .idivt h1 b{
-        font-size: 35px;
+        font-size: clamp(36px, 12vw, 50px);
     }
     .idivt h1{
         font-size: 16px;
@@ -65,7 +68,7 @@
 
 .eror{
     display: block;
-    width: 100%;
+    width: calc(100% - 80px);
     align-content: center;
     background-color: black;
     transition-duration: 0.5s;

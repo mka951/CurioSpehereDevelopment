@@ -26,17 +26,17 @@
     
 }
 .idivt p {
-    font-size: 14px;
+    font-size: 16px;
     transition-duration: 0.3s;
     max-width: 750px;
     font-family: var(--font-family-secondary);
-    line-height: 16px;
+    line-height: 24px;
 }
 .idivt h1 {
-    margin: 0 0 16px;
+    margin: 0 0 24px;
     font-size: 20px;
     transition-duration: 0.3s;
-    line-height: 38px;
+    line-height: 40px;
 }
 .idivt h1 b{
     font-size: 50px;

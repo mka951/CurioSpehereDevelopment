@@ -7,5 +7,8 @@
     --color-accent2: #007EA7;
     --color-accent-bg: #003b4e;
     --color-text-primary: #ffffff;
+    --color-nav: #0000006a;
     --font-family-primary: 'Poppins', sans-serif;
 }
+
+::-webkit-scrollbar {width: 0px;}
